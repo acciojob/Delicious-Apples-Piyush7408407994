@@ -1,1 +1,126 @@
-/* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  background-color: #c62828;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.product__photo {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.photo-container {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.photo-main img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.photo-album ul {
+  display: flex;
+  margin-top: 15px;
+  gap: 10px;
+  list-style: none;
+}
+
+.photo-album img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.photo-album img:hover {
+  transform: scale(1.1);
+}
+
+.details {
+  flex: 1;
+  padding: 30px;
+  min-width: 300px;
+}
+
+.price {
+  font-size: 2rem;
+  color: #d32f2f;
+  margin-bottom: 15px;
+}
+
+.variant h3,
+.description h3 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.variant ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.variant li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  cursor: pointer;
+}
+
+.description ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.cart-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #c62828;
+}
